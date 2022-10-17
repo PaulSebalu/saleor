@@ -12,6 +12,9 @@ All notable, unreleased changes to this project will be documented in this file.
 - Add ability to filter customers by ids. #10694 by @kadewu
 - Add optional field `audience` to mutation `tokenCreate`. If provided, the created tokens will have key `aud` with value: `custom:{audience-input-value}` - #10845 by @korycins
 - Use `AttributeValue.name` instead of `AttributeValue.slug` to determine uniqueness of a value instance for dropdown and multiselect attributes. - #10881 by @jakubkuc
+- Add sorting by `CREATED_AT` field. #10911 by @zedzior
+  - Affected types: GiftCard, Page.
+  - Deprecated `CREATION_DATE` sort field on Page type. Use `CREATED_AT` instead.
 
 ### Other changes
 
